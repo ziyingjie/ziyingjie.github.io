@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      sama 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="John Doe">
+    
+    
+
+    <meta name="description" content="navToggle   基于jQuery，所以必须在之前引入jQuery  插件功能：实现导航栏在滚动过程中的显示隐藏特效  传入参数为对象，包含4个属性：  selector:   选择器          必须 animate:    动画方式        可选 time:       过渡时间        可选 distance:   执行动画的距离   可选 选择器为必须传入的参数,">
+<meta property="og:type" content="website">
+<meta property="og:title" content="sama">
+<meta property="og:url" content="http://yoursite.com/sama/index.html">
+<meta property="og:site_name" content="落花人独立">
+<meta property="og:description" content="navToggle   基于jQuery，所以必须在之前引入jQuery  插件功能：实现导航栏在滚动过程中的显示隐藏特效  传入参数为对象，包含4个属性：  selector:   选择器          必须 animate:    动画方式        可选 time:       过渡时间        可选 distance:   执行动画的距离   可选 选择器为必须传入的参数,">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-02T03:45:07.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sama">
+<meta name="twitter:description" content="navToggle   基于jQuery，所以必须在之前引入jQuery  插件功能：实现导航栏在滚动过程中的显示隐藏特效  传入参数为对象，包含4个属性：  selector:   选择器          必须 animate:    动画方式        可选 time:       过渡时间        可选 distance:   执行动画的距离   可选 选择器为必须传入的参数,">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">落花人独立</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/sama" title="" class="">SAMA</a></li>
+              
+                
+                <li class="navigation__item"><a href="/teach" title="" class="">教程</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">sama</h1>
+
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h4 id="navToggle"><a href="#navToggle" class="headerlink" title="navToggle"></a>navToggle</h4><hr>
+<p>  基于jQuery，所以必须在之前引入jQuery</p>
+<ul>
+<li><p>插件功能：实现导航栏在滚动过程中的显示隐藏特效</p>
+</li>
+<li><p>传入参数为对象，包含4个属性：</p>
+</li>
+<li>selector:   选择器          必须</li>
+<li>animate:    动画方式        可选</li>
+<li>time:       过渡时间        可选</li>
+<li>distance:   执行动画的距离   可选</li>
+<li>选择器为必须传入的参数, 其余参数可选，其中动画方式可选”fade”,”slide”</li>
+<li><p>options = { selector, animate, time, distance }</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(function($)&#123;</span><br><span class="line"></span><br><span class="line">    //设置默认参数</span><br><span class="line">    var defaults = &#123;</span><br><span class="line">        selector: &quot;&quot;,</span><br><span class="line">        animate: &quot;fade&quot;,</span><br><span class="line">        time: 500,</span><br><span class="line">        distance: 120</span><br><span class="line">    &#125;,</span><br><span class="line">    //设置动画种类，可扩展</span><br><span class="line">    animations = &#123;</span><br><span class="line">        fade : [&quot;fadeOut&quot; ,&quot;fadeIn&quot; ],</span><br><span class="line">        slide: [&quot;slideUp&quot;, &quot;slideDown&quot;]</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $.extend(&#123;</span><br><span class="line">        // 创建isDom方法 判断jQuery对象转换dom对象是否合法</span><br><span class="line">        isDom: function(obj)&#123;</span><br><span class="line">            // 考虑兼容性 在chrome浏览器中 typeof HTMLElement === &apos;function&apos;</span><br><span class="line">            if(typeof HTMLElement === &apos;object&apos;)&#123;</span><br><span class="line">                return obj instanceof HTMLElement;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                return obj &amp;&amp; typeof obj === &apos;object&apos; &amp;&amp; obj.nodeType === 1 &amp;&amp; typeof obj.nodeName === &apos;string&apos;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        navToggle: function(options)&#123;</span><br><span class="line"></span><br><span class="line">            //检查用户设置的selector是否合法,强制设置该参数，如果不合法，抛出错误，结束进程</span><br><span class="line">            options = options || null;</span><br><span class="line">            if( !$.isDom($(options.selector)[0]) )&#123;</span><br><span class="line">                throw new Error( &quot;arguments[0] is not valid&quot; );</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            var opts = $.extend( &#123;&#125;, defaults, options );</span><br><span class="line"></span><br><span class="line">            //选择动画种类</span><br><span class="line">            var animate = (opts.animate === &quot;fade&quot;) ? animations.fade : animations.slide;</span><br><span class="line"></span><br><span class="line">            $.each( $(opts.selector), function()&#123;</span><br><span class="line">                var $this = $(this),</span><br><span class="line">                    distance = opts.distance,</span><br><span class="line">                    _winTop = 0;</span><br><span class="line"></span><br><span class="line">                $(window).on(&apos;scroll&apos;, function()&#123;</span><br><span class="line">                    var winTop = $(this).scrollTop();</span><br><span class="line">                    // 下滑</span><br><span class="line">                    if (winTop &gt; _winTop ) &#123;</span><br><span class="line">                        if(winTop &gt;= distance)&#123;</span><br><span class="line">                            // 执行动画之前必须先清除所有的事件队列 stop()</span><br><span class="line">                            $this.stop()[ animate[0] ](opts.time);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    // 上滑</span><br><span class="line">                    else &#123;</span><br><span class="line">                        $this.stop()[ animate[1] ](opts.time);</span><br><span class="line">                    &#125;</span><br><span class="line">                    _winTop = $(this).scrollTop();</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)(window.jQuery);</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
